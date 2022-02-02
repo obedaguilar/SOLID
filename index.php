@@ -1,5 +1,7 @@
 <?php
 
+use  PRUEBASPHP\CoffeShop;
+
 $products = [
 
 ['id' => 1, 'name' => 'Negro', 'Price' => 25],
@@ -8,10 +10,11 @@ $products = [
 
 ];
 
-$shop = new newCoffeShop();
+$shop = new CoffeShop();
 
 $shop->addProducts($products);
 
-echo $shop->viewMenu();
+$menu = new \PRUEBASPHP\Menu();
+echo $menu-> view($shop->getProducts());
 
 ?>

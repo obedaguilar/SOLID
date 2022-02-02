@@ -1,13 +1,12 @@
 <?php
 
-namespace App;
-
+namespace PRUEBASPHP;
 class  CoffeShop
 {
     protected $products = [];
 
 
-    public function addProducts($product = [])
+    public function addProducts(Array $product)
     {
         $this->products = $product;
     }
@@ -18,17 +17,5 @@ class  CoffeShop
     public function removeProduct($id)
     {
         //logica para borrar el producto
-    }
-    public function addtoCart($id, $quantity)
-    {
-        //logica
-    }
-    public function getTotal()
-    {
-        //logica para generar el total a apagar el carrito
-    }
-    public function viewMenu()
-    {
-        $menu = '';
     }
 }
